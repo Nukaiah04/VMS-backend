@@ -12,6 +12,12 @@ namespace VMS.Controller
         {
             return Ok(new { });
         }
+
+        [HttpPost("GetData")]
+        public IActionResult GetData()
+        {
+            return Ok(new { });
+        }
         
     }
 }
