@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using VMS.Data;
 
 namespace VMS.Controller
 {
@@ -6,6 +7,11 @@ namespace VMS.Controller
     [ApiController]
     public class MedicineController : ControllerBase
     {
+        [HttpPost("")]
+        public IActionResult SaveData()
+        {
+            return Ok(new { });
+        }
         
     }
 }
