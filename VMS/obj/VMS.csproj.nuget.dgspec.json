@@ -1,25 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "/Users/YalagalaSrinivas/Documents/C#Projects/Bluehealth_Backend/VMS/VMS.csproj": {}
+    "c:\\Users\\bluec\\OneDrive\\Documents\\C#EntityProjects\\VMS\\VMS\\VMS.csproj": {}
   },
   "projects": {
-    "/Users/YalagalaSrinivas/Documents/C#Projects/Bluehealth_Backend/VMS/VMS.csproj": {
+    "c:\\Users\\bluec\\OneDrive\\Documents\\C#EntityProjects\\VMS\\VMS\\VMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/YalagalaSrinivas/Documents/C#Projects/Bluehealth_Backend/VMS/VMS.csproj",
+        "projectUniqueName": "c:\\Users\\bluec\\OneDrive\\Documents\\C#EntityProjects\\VMS\\VMS\\VMS.csproj",
         "projectName": "VMS",
-        "projectPath": "/Users/YalagalaSrinivas/Documents/C#Projects/Bluehealth_Backend/VMS/VMS.csproj",
-        "packagesPath": "/Users/YalagalaSrinivas/.nuget/packages/",
-        "outputPath": "/Users/YalagalaSrinivas/Documents/C#Projects/Bluehealth_Backend/VMS/obj/",
+        "projectPath": "c:\\Users\\bluec\\OneDrive\\Documents\\C#EntityProjects\\VMS\\VMS\\VMS.csproj",
+        "packagesPath": "C:\\Users\\bluec\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\bluec\\OneDrive\\Documents\\C#EntityProjects\\VMS\\VMS\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/YalagalaSrinivas/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\bluec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +47,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -74,6 +83,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.11, 9.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[9.0.11, 9.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.11, 9.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[9.0.11, 9.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -82,7 +109,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

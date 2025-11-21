@@ -31,4 +31,8 @@
 //             return Ok(new { status = true, message = "Pharmacy Onboarded successfully.", data = pharmaData });  
 //         }
 //     }
+
+//     public class Pharmacy
+//     {
+//     }
 // }  

@@ -1,6 +1,6 @@
 // using Microsoft.AspNetCore.Mvc;
 // using Microsoft.EntityFrameworkCore;
-// using VMS.Data;/
+// using VMS.Data;
 // using VMS.Models;
 
 // namespace VMS.Controller
@@ -18,12 +18,11 @@
 //         }
 
 //         [HttpPost("InsertNewHospital")]
-//         public IActionResult InsertNewHospital([FromBody]Hospital hospital)
+//         public async IActionResult InsertNewHospital([FromBody]Hospital hospital)
 //         {
-//             var hospitaldata = dbContext.Hospital.Add(hospital);
-//             dbContext.SaveChanges();             
-
-            // return Ok(new { message = "Hospital inserted successfully" } );
+//             var hospitaldata = await dbContext.Hospital.AddAsync(hospital);
+//             dbContext.SaveChangesAsync();             
+//             return Ok(new { message = "Hospital inserted successfully" } );
 //         } 
 
 //     }

@@ -16,10 +16,10 @@
 //         }
 
 //         [HttpPost("Create")]
-//         public IActionResult CreateProduct([FromBody] Product product)
+//         public async IActionResult CreateProduct([FromBody] Product product)
 //         {
-//             dbc.Product.Add(product);
-//             dbc.SaveChanges();
+//             var data = await dbc.Product.AddAsync(product);
+//             dbc.SaveChangesAsync();
 //             return Ok(new { });
 //         }
         
