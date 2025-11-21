@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="VET/VET.csproj" />
   <Project Path="VMS/VMS.csproj" />
 </Solution>

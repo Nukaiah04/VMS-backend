@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\bluec\\OneDrive\\Documents\\C#EntityProjects\\VMS\\VMS\\VMS.csproj": {}
+    "C:\\Users\\bluec\\OneDrive\\Documents\\C#EntityProjects\\VMS\\VMS\\VMS.csproj": {}
   },
   "projects": {
-    "c:\\Users\\bluec\\OneDrive\\Documents\\C#EntityProjects\\VMS\\VMS\\VMS.csproj": {
+    "C:\\Users\\bluec\\OneDrive\\Documents\\C#EntityProjects\\VMS\\VMS\\VMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\bluec\\OneDrive\\Documents\\C#EntityProjects\\VMS\\VMS\\VMS.csproj",
+        "projectUniqueName": "C:\\Users\\bluec\\OneDrive\\Documents\\C#EntityProjects\\VMS\\VMS\\VMS.csproj",
         "projectName": "VMS",
-        "projectPath": "c:\\Users\\bluec\\OneDrive\\Documents\\C#EntityProjects\\VMS\\VMS\\VMS.csproj",
+        "projectPath": "C:\\Users\\bluec\\OneDrive\\Documents\\C#EntityProjects\\VMS\\VMS\\VMS.csproj",
         "packagesPath": "C:\\Users\\bluec\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\bluec\\OneDrive\\Documents\\C#EntityProjects\\VMS\\VMS\\obj\\",
+        "outputPath": "C:\\Users\\bluec\\OneDrive\\Documents\\C#EntityProjects\\VMS\\VMS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
