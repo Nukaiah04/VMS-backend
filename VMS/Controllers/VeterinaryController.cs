@@ -17,6 +17,7 @@ namespace VMS.Controllers
 
         }
 
+
         [HttpPost("Create")]
         public async Task<IActionResult> CreateVeterinary([FromBody] Veterinary veterinary)
         {
