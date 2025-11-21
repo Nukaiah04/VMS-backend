@@ -15,28 +15,9 @@ namespace VMS.Data
         public DbSet<Student> Student { get; set; }
         public DbSet<Hospital> Hospital { get; set; }
         public DbSet<Authorization> Authorization { get; set; }
-        public object Product { get; internal set; }
+        public DbSet<Product> Product { get; set; }
+          public DbSet<Veterinary> Veterinary { get; set; }
 
-        internal void Savechanges()
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public class Authetication
-    {
-    }
-
-    public class Pharmacy
-    {
-    }
-
-    public class Student
-    {
-    }
-
-    public class Hospital
-    {
     }
 }
 

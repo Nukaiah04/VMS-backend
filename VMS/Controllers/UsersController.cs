@@ -9,9 +9,10 @@ namespace VMS.Controllers
     [Route("api/[controller]")]
     [ApiController]
 
+
     public class UserController : ControllerBase
     {
-        private readonly ApplicationDbContext dbContext;
+        private readonly ApplicationDbContext dbContext; 
         public UserController(ApplicationDbContext applicationDbContext)
         {
             dbContext = applicationDbContext;
@@ -41,8 +42,7 @@ namespace VMS.Controllers
                 }
                 else
                 {
-                return Conflict(new { status = false, message = "successfully register" });
-                    
+                return Conflict(new { status = false, message = "successfully register" });   
                 }
             }
         }
