@@ -9,7 +9,6 @@ namespace VMS.Controllers
     [Route("api/[controller]")]
     [ApiController]
 
-
     public class UserController : ControllerBase
     {
         private readonly ApplicationDbContext dbContext; 
