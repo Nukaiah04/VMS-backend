@@ -1,6 +1,7 @@
 // using Microsoft.AspNetCore.Mvc;
 // using Microsoft.EntityFrameworkCore;
 // using VMS.Data;
+// using VMS.Models;
 
 // namespace VMS.Controllers
 // {

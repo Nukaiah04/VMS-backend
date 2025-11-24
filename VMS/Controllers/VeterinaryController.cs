@@ -26,5 +26,14 @@ namespace VMS.Controllers
             return Ok(new { status = true, message = "Veterinary Onboarded successfully.", data = Data.Entity});
 
         }
+
+        [HttpGet("Read")]
+        public async Task<IActionResult> getveterinary()
+        {
+            var Data = await dbcontext.Veterinary.ToListAsync();
+            return Ok(new { status = true, message = "Veterinary data fetched successfully.", data = Data });
+
+        }
+
     }
     }
