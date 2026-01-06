@@ -17,7 +17,7 @@ namespace VMS.Data
         public DbSet<Authorization> Authorization { get; set; }
         public DbSet<Product> Product { get; set; }
           public DbSet<Veterinary> Veterinary { get; set; }
-
+        public object Office { get; internal set; }
     }
 }
 
