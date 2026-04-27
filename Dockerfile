@@ -4,11 +4,10 @@ WORKDIR /app
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-COPY VMS.csproj .              
-RUN dotnet restore VMS.csproj  
-
 COPY . .
-RUN dotnet publish VMS.csproj -c Release -o /app/publish  
+
+RUN dotnet restore VMS.csproj
+RUN dotnet publish VMS.csproj -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
