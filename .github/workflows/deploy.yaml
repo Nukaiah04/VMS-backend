@@ -39,11 +39,11 @@ jobs:
             ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
             ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
 
-      - name: Set up kubectl
-        uses: azure/setup-kubectl@v3
+      - name: Start Minikube
+        uses: medyagh/setup-minikube@latest
 
-      - name: Deploy to Kubernetes
+      - name: Deploy to Minikube
         run: |
           kubectl apply -f k8s/deployment.yaml
           kubectl apply -f k8s/service.yaml
-          kubectl rollout status deployment/vms-backend      
+          kubectl rollout status deployment/vms-backend   
