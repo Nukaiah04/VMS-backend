@@ -1,0 +1,32 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using VMS.Data;
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "VMS API",
+        Version = "v1"
+    });
+});
+builder.Services.AddControllers();
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+var app = builder.Build();
+
+// ✅ Enable Swagger in all environments
+app.UseSwagger();
+app.UseSwaggerUI();
+
+// ✅ Remove HTTPS redirect (not needed in Kubernetes)
+// app.UseHttpsRedirection();
+
+app.MapControllers();
+
+app.Run();
