@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vms-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vms-backend
+  template:
+    metadata:
+      labels:
+        app: vms-backend
+    spec:
+      containers:
+        - name: vms-backend
+          image: nukaiah04/vms-backend:latest 
+          ports:
+            - containerPort: 8080
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: "Production"
