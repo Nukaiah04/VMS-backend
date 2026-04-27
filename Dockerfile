@@ -1,13 +1,16 @@
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
-COPY VMS/VMS.csproj ./VMS/
-RUN dotnet restore ./VMS/VMS.csproj
-COPY . .
-WORKDIR /app/VMS
-RUN dotnet publish -c Release -o out
 
-FROM mcr.microsoft.com/dotnet/aspnet:8.0
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /src
+
+COPY VMS.csproj .              
+RUN dotnet restore VMS.csproj  
+
+COPY . .
+RUN dotnet publish VMS.csproj -c Release -o /app/publish  
+
+FROM base AS final
 WORKDIR /app
-COPY --from=build /app/VMS/out .
-EXPOSE 80
+COPY --from=build /app/publish .
 ENTRYPOINT ["dotnet", "VMS.dll"]
