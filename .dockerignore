@@ -1,0 +1,41 @@
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# Build output
+bin/
+obj/
+out/
+publish/
+
+# User-specific files
+*.user
+*.lock.json
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code / IDE
+.vscode/
+.vs/
+
+# Node (if accidentally present)
+node_modules/
+
+# Flutter leftovers (important in your case)
+pubspec.yaml
+pubspec.lock
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+android/
+ios/
+lib/
