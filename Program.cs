@@ -29,4 +29,7 @@ app.UseSwaggerUI();
 
 app.MapControllers();
 
+// ✅ Home route
+app.MapGet("/", () => "VMS Backend Running Successfully");
+
 app.Run();

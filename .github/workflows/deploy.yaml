@@ -20,7 +20,7 @@ jobs:
           dotnet-version: 9.0.x
 
       - name: Restore dependencies
-        run: dotnet restore VMS.sln           # ✅ fixed
+        run: dotnet restore VMS.sln          
 
       - name: Run tests
         run: dotnet test VMS.Tests/VMS.Tests.csproj --no-restore --verbosity normal
