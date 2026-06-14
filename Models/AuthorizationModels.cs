@@ -1,14 +1,13 @@
-// using System.ComponentModel.DataAnnotations;
-// using Microsoft.EntityFrameworkCore.Metadata.Internal;
+namespace VMS.Models
+{
+    public class Authorization
+    {
+        public int AuthorizationId { get; set; }
 
-// namespace VMS.Controllers
-// {
-//     public class Authorization
-//     {
-//         public int AuthzId { get; set; }
-//         public string? Role { get; set; }
-//         public string? Permission { get; set; }
-//         public DateTime Created { get; set; }
-//         public DateTime Updated { get; set; }
-//     }
-// }
+        public string? UserName { get; set; }
+        public string? Role { get; set; }
+        public string? Permission { get; set; }
+        public string? Status { get; set; }
+        public DateTime Created { get; set; } = DateTime.Now;
+    }
+}
